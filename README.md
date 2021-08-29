@@ -1,6 +1,14 @@
 # cyber-security-base-project
 
-This project is made for Cyber Security Base Mooc course.
+This project is made for Cyber Security Base Mooc course. This project contains 5 flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/).
+
+### Flaws
+
+- Broken authentication
+- Sensitive Data Exposure
+- Broken Access Control
+- Security Misconfiguration
+- Using Components with Known Vulnerabilities
 
 https://cybersecuritybase.mooc.fi
 
