@@ -22,19 +22,15 @@ function App() {
           console.log(err);
         });
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, username]);
   return (
-    <div>
+    <>
       {isLoggedIn ? (
         <h1>Your PIN is: {PIN}</h1>
       ) : (
-        <LoginForm
-          setIsLoggedIn={setIsLoggedIn}
-          setPIN={setPIN}
-          setUsername={setUsername}
-        />
+        <LoginForm setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />
       )}
-    </div>
+    </>
   );
 }
 
@@ -49,7 +45,6 @@ const LoginForm = (props) => {
         password: `${password}`,
       })
       .then((res) => {
-        //props.setPIN(res.data.pin);
         props.setUsername(res.data.username);
         props.setIsLoggedIn(true);
       })
