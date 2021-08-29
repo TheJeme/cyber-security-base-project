@@ -10,8 +10,6 @@ This project is made for Cyber Security Base Mooc course. This project contains 
 - Security Misconfiguration
 - Using Components with Known Vulnerabilities
 
-https://cybersecuritybase.mooc.fi
-
 ### Built with
 
 - [MongoDB](https://www.mongodb.com)
