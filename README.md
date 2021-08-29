@@ -46,7 +46,7 @@ You can configure and run the project locally by following the steps below.
 
 ### Start Frontend
 
-You can start backend with command `npm start`
+You can start frontend with command `npm start`
 
 ### Start Backend
 
