@@ -5,17 +5,18 @@ const User = require("../models/user");
 loginRouter.post("/", async (request, response) => {
   const body = request.body;
   const user = await User.findOne({ username: body.username });
-
-  const passwordCorrect =
-    user === null ? false : await (body.password === user.password);
-
-  if (!(user && passwordCorrect)) {
+  if (user === null) {
     return response.status(401).json({
-      error: "Invalid username or password",
+      error: "Invalid username",
     });
   }
 
-  response.status(200).json({ token });
+  if (body.password == user.password) {
+    return response.status(401).json({
+      error: "Invalid password",
+    });
+  }
+  response.json(user);
 });
 
 module.exports = loginRouter;
