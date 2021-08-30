@@ -51,3 +51,8 @@ You can start frontend with command `npm start`
 ### Start Backend
 
 You can start backend with command `npm start` or in development mode with `npm run dev`
+
+### Login
+
+Username: admin 
+Password: 1234
