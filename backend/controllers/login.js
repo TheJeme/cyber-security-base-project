@@ -16,7 +16,7 @@ loginRouter.post("/", async (request, response) => {
       error: "Invalid password",
     });
   }
-  response.json(user);
+  response.json(user.pin);
 });
 
 module.exports = loginRouter;
